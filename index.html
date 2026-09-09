@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veyra Markets — Indian Market Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <section id="landing-page" class="landing-page" aria-label="Veyra Markets introduction">
+    <div class="landing-grid"></div>
+    <div class="landing-glow landing-glow-one"></div>
+    <div class="landing-glow landing-glow-two"></div>
+    <div class="landing-inner">
+      <div class="landing-topline">
+        <span class="brand-mark">V</span>
+        <span>VEYRA MARKETS</span>
+        <span class="landing-topline-rule"></span>
+        <span>MARKET INTELLIGENCE</span>
+      </div>
+      <div class="landing-copy">
+        <p class="landing-kicker">INDIA · LIVE MARKET MONITOR</p>
+        <h1>See the market.<br><em>Read the move.</em></h1>
+        <p class="landing-subtitle">A focused command center for indices, stocks, commodities, portfolios and price alerts — built to make every market move instantly understandable.</p>
+        <button id="enter-dashboard" class="landing-cta">Open dashboard <span>↗</span></button>
+      </div>
+      <div class="landing-preview" aria-hidden="true">
+        <div class="preview-window-bar"><span></span><span></span><span></span><b>VEYRA / LIVE</b></div>
+        <div class="preview-body">
+          <div class="preview-side"></div>
+          <div class="preview-main">
+            <div class="preview-label">SENSEX · TODAY</div>
+            <div class="preview-value">75,577.58 <i>-0.73%</i></div>
+            <div class="preview-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="preview-cards"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="landing-footer">
+        <span>LIVE DATA · ALERTS · WATCHLIST · PORTFOLIO</span>
+        <span>DESIGNED FOR CLARITY</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="app-shell is-hidden" id="app-shell">
+    <aside class="nav-rail" id="nav-rail"></aside>
+
+    <div class="main-column">
+      <header class="top-bar">
+        <div class="ticker-tape" aria-label="Live market ticker">
+          <div class="ticker-tape-track" id="ticker-tape-inner">Loading market data…</div>
+        </div>
+        <div class="top-bar-status">
+          <span id="ist-clock" class="ist-clock"></span>
+          <span class="conn-indicator">
+            <span id="conn-dot" class="conn-dot"></span>
+            <span id="conn-label">Connecting…</span>
+          </span>
+        </div>
+      </header>
+
+      <main id="view-container" class="view-container">
+        <div class="empty-state"><p>Loading dashboard…</p></div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/js/db.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/market-status.js"></script>
+  <script src="/js/market-data.js"></script>
+  <script src="/js/charts.js"></script>
+  <script src="/js/watchlist.js"></script>
+  <script src="/js/portfolio.js"></script>
+  <script src="/js/alerts.js"></script>
+  <script src="/js/overview.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "market-dashboard",
+  "version": "1.0.0",
+  "description": "Real-time Indian market monitoring dashboard (NIFTY 50, SENSEX, Indian stocks, Gold, Silver, USD/INR)",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
